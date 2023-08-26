@@ -28,6 +28,6 @@ public class Address {
 		this.state = state;
 		this.type = type;
 	}
-	
+System.out.println("rama");
 
 }
