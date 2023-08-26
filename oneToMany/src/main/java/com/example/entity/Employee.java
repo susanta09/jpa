@@ -26,5 +26,6 @@ public class Employee {
 	@OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
 	@JoinColumn(name = "empId")
 	private List<Address> addresses;
+	System.out.println("rama");
 
 }
