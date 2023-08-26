@@ -1,0 +1,17 @@
+package com.example.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Modifying;
+import org.springframework.data.jpa.repository.Query;
+
+import com.example.entity.Address;
+
+import jakarta.transaction.Transactional;
+
+public interface AddressRepository extends JpaRepository<Address, Integer> {
+	@Transactional
+	@Modifying
+	@Query("delete from Address where empId=?1 and type=?2")
+	void deleteAddressBYAddressType(Integer empId,String type);
+
+}

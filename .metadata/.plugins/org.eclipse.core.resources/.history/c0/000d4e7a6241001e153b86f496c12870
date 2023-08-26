@@ -1,0 +1,10 @@
+package com.exam.model;
+
+public class Product {
+	private Integer pid;
+	private String pName;
+	private String pBrand;
+	private Double prise;
+	private byte[] pImg;
+	private char[] pDesc;
+}

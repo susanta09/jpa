@@ -1,0 +1,27 @@
+package com.exam;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+@SpringBootApplication
+public class LobDemoApplication {
+
+	public static void main(String[] args) throws Exception {
+	ConfigurableApplicationContext context=
+			SpringApplication.run(LobDemoApplication.class, args);
+
+		FileInputStream file=new FileInputStream("D:/imageProject/samsung23.jpg");
+		byte[] img=new byte[file.available()];
+		file.read(img);
+		String input="This is good smart phone .It is good for live sreaming,game playing.";
+		char[] desc=input.toCharArray();
+		
+
+	}
+
+}

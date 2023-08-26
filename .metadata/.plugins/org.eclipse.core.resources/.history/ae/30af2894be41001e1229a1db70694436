@@ -1,0 +1,10 @@
+package com.example.model;
+
+public class Employee {
+	private Integer eId;
+	private String eName;
+	private String eEmail;
+	private Integer eAge;
+	private String eDept;
+	private Double eSal;
+}

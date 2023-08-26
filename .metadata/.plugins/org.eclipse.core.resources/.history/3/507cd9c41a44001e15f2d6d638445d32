@@ -1,0 +1,14 @@
+package com.example.service;
+
+
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Service;
+
+@Service
+public interface EmpServices {
+	public void saveEmpData();
+	public void showData();
+	@Query("delete from Address where empId=?1 and type=?2")
+	void deleteAddressBYAddressType(Integer empId,String type);
+
+}

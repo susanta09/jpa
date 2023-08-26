@@ -1,0 +1,21 @@
+package com.exam;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+@SpringBootApplication
+public class LobDemoApplication {
+
+	public static void main(String[] args) throws FileNotFoundException {
+	ConfigurableApplicationContext context=
+			SpringApplication.run(LobDemoApplication.class, args);
+
+		FileInputStream file=new FileInputStream("D:/image/Project.samsung23.jpg");
+
+	}
+
+}
